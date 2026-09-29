@@ -41,7 +41,7 @@ public class InventoryEssentialsConfigData implements BalmConfigData {
     public boolean enableStackRefill = true;
 
     @Comment("Choose how middle-click inventory sorting should behave.")
-    public InventorySorting inventorySorting = InventorySorting.CREATIVE;
+    public InventorySorting inventorySorting = InventorySorting.AMOUNT;
 
 }
 

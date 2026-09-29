@@ -8,6 +8,7 @@ public enum InventorySorting implements StringRepresentable {
     CONSOLIDATE_ONLY,
     RETAIN_ORDER,
     ALPHABETICAL,
+    AMOUNT,
     CREATIVE;
 
     @Override

@@ -45,5 +45,6 @@
   "inventoryessentials.configuration.inventorySorting.consolidate_only": "Consolidate Only",
   "inventoryessentials.configuration.inventorySorting.retain_order": "Retain Order",
   "inventoryessentials.configuration.inventorySorting.alphabetical": "Alphabetical",
+  "inventoryessentials.configuration.inventorySorting.amount": "Amount",
   "inventoryessentials.configuration.inventorySorting.creative": "Creative"
 }

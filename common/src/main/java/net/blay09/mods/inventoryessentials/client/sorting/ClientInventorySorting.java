@@ -104,6 +104,7 @@ public class ClientInventorySorting {
         return switch (sortingMode) {
             case CONSOLIDATE_ONLY -> throw new IllegalStateException("No comparator available for CONSOLIDATE_ONLY");
             case RETAIN_ORDER -> throw new IllegalStateException("No comparator available for RETAIN_ORDER");
+            case AMOUNT -> throw new  IllegalStateException("No comparator available for AMOUNT");
             case ALPHABETICAL -> defaultComparator;
             case CREATIVE -> CreativeSorting.getCreativeComparator().thenComparing(defaultComparator);
         };
@@ -117,6 +118,10 @@ public class ClientInventorySorting {
                 .toList();
         if (sortingMode == InventorySorting.RETAIN_ORDER) {
             return RetainOrderSorting.computeSortedList(stacks);
+        }
+
+        if (sortingMode == InventorySorting.AMOUNT) {
+            return AmountSorting.computeSortedList(stacks);
         }
 
         return stacks.stream()
